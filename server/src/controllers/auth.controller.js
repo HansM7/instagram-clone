@@ -21,7 +21,6 @@ class AuthController {
   }
 
   async meController(req, res) {
-    console.log("Here is controller");
     const token = req.get("Authorization");
     if (token) {
       const response = await auhtService.meService(token);

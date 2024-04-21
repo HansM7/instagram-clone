@@ -11,7 +11,14 @@ class PublicationService {
     }
   }
 
-  create() {}
+  async create(data) {
+    try {
+      const created = await publicationModel.create(data);
+      return responseService.ok("Publication created", created);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   delete() {}
 }

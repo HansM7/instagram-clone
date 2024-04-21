@@ -13,7 +13,7 @@ function Publication() {
             className="rounded-full"
             width={45}
             height={35}
-            src="https://m.media-amazon.com/images/I/61PmrruBawL._AC_UF894,1000_QL80_.jpg"
+            src="http://localhost:3333/api/publications/image/bd074f28-8e65-4639-815b-20ec53f98ec4"
             alt=""
           />
           <div className="flex flex-row ">

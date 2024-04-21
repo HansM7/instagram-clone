@@ -1,12 +1,16 @@
 import mongoose from "mongoose";
 
+import { v4 as uuid } from "uuid";
+
 const poublicacionSchema = new mongoose.Schema({
+  id: {
+    type: String,
+    default: () => uuid(),
+  },
   user: {
     type: Object,
   },
-  titulo: {
-    type: String,
-  },
+
   description: {
     type: String,
   },

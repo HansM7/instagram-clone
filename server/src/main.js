@@ -1,6 +1,7 @@
 import express from "express";
 import authRouter from "./routes/auth.route.js";
 import cors from "cors";
+import publicationRouter from "./routes/publication.route.js";
 
 const app = express();
 
@@ -14,5 +15,6 @@ app.use(
 );
 
 app.use("/api", authRouter);
+app.use("/api", publicationRouter);
 
 app.listen(3333);
